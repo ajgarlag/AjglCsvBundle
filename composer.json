@@ -1,0 +1,25 @@
+{
+  "name": "ajgl/csv-bundle",
+  "type": "symfony-bundle",
+  "description": "Provides some CSV helper clases",
+  "keywords": ["csv", "bundle", "symfony"],
+  "homepage": "https://github.com/ajgl/AjglCsvBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Antonio J. García Lagar",
+      "email": "aj@garcialagar.es",
+      "homepage": "http://aj.garcialagar.es",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "ajgl/csv": "*",
+    "symfony/framework-bundle": ">=2.0,<2.2-dev"
+  },
+  "autoload": {
+    "psr-0": { "Ajgl\\Bundle\\CsvBundle": "" }
+  },
+  "target-dir": "Ajgl/Bundle/CsvBundle"
+}

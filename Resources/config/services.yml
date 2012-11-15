@@ -1,0 +1,21 @@
+parameters:
+    ajgl_csv.reader.factory.class: Ajgl\Csv\Reader\ReaderFactory
+    ajgl_csv.writer.factory.class: Ajgl\Csv\Writer\WriterFactory
+    ajgl_csv.reader.type.default: "php"
+    ajgl_csv.writer.type.default: "php"
+    ajgl_csv.service.class: Ajgl\Csv\Csv
+
+services:
+    ajgl_csv.reader.factory:
+        class: %ajgl_csv.reader.factory.class%
+        public: false
+    ajgl_csv.writer.factory:
+        class: %ajgl_csv.writer.factory.class%
+        public: false
+    ajgl_csv:
+        class: %ajgl_csv.service.class%
+        arguments: [@ajgl_csv.reader.factory, @ajgl_csv.writer.factory]
+        calls:
+            - [ setDefaultReaderType, [ %ajgl_csv.reader.type.default% ] ]
+            - [ setDefaultWriterType, [ %ajgl_csv.writer.type.default% ] ]
+
