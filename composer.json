@@ -3,7 +3,7 @@
   "type": "symfony-bundle",
   "description": "Provides some CSV helper clases",
   "keywords": ["csv", "bundle", "symfony"],
-  "homepage": "https://github.com/ajgl/AjglCsvBundle",
+  "homepage": "https://github.com/ajgarlag/AjglCsvBundle",
   "license": "MIT",
   "authors": [
     {
