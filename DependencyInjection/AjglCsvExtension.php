@@ -33,6 +33,6 @@ class AjglCsvExtension extends Extension
         $csvDefinition = $container->getDefinition('ajgl_csv');
         $csvDefinition->addMethodCall('setDefaultReaderType', array('%ajgl_csv.reader.default_type%'));
         $csvDefinition->addMethodCall('setDefaultWriterType', array('%ajgl_csv.writer.default_type%'));
-        
+
     }
 }
