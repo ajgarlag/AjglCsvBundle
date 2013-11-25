@@ -1,25 +1,31 @@
 {
-  "name": "ajgl/csv-bundle",
-  "type": "symfony-bundle",
-  "description": "Provides some CSV helper clases",
-  "keywords": ["csv", "bundle", "symfony"],
-  "homepage": "https://github.com/ajgarlag/AjglCsvBundle",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Antonio J. García Lagar",
-      "email": "aj@garcialagar.es",
-      "homepage": "http://aj.garcialagar.es",
-      "role": "developer"
+    "name": "ajgl/csv-bundle",
+    "type": "symfony-bundle",
+    "description": "Provides some CSV helper clases",
+    "keywords": ["csv", "bundle", "symfony"],
+    "homepage": "https://github.com/ajgarlag/AjglCsvBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonio J. García Lagar",
+            "email": "aj@garcialagar.es",
+            "homepage": "http://aj.garcialagar.es",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "ajgl/csv": "self.version",
+        "symfony/framework-bundle": "~2.1"
+    },
+    "autoload": {
+        "psr-0": {"Ajgl\\Bundle\\CsvBundle": ""}
+    },
+    "target-dir": "Ajgl/Bundle/CsvBundle",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     }
-  ],
-  "require": {
-    "php": ">=5.3.2",
-    "ajgl/csv": "*",
-    "symfony/framework-bundle": ">=2.0,<2.4-dev"
-  },
-  "autoload": {
-    "psr-0": { "Ajgl\\Bundle\\CsvBundle": "" }
-  },
-  "target-dir": "Ajgl/Bundle/CsvBundle"
 }
