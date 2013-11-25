@@ -19,12 +19,20 @@ use Symfony\Component\DependencyInjection\Loader;
  */
 class AjglCsvExtension extends Extension
 {
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $config, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $config = $this->processConfiguration($configuration, $configs);
+        $config = $this->processConfiguration($configuration, $config);
+
+        $container->setParameter('ajgl_csv.reader.default_type', $config['reader_default_type']);
+        $container->setParameter('ajgl_csv.writer.default_type', $config['writer_default_type']);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('csv.xml');
+
+        $csvDefinition = $container->getDefinition('ajgl_csv');
+        $csvDefinition->addMethodCall('setDefaultReaderType', array('%ajgl_csv.reader.default_type%'));
+        $csvDefinition->addMethodCall('setDefaultWriterType', array('%ajgl_csv.writer.default_type%'));
+        
     }
 }

@@ -38,9 +38,13 @@ class AjglCsvExtensionTest extends \PHPUnit_Framework_TestCase
         $this->extension->load(array(), $this->container);
 
         $this->assertTrue($this->container->hasParameter('ajgl_csv.class'));
+        $this->assertTrue($this->container->hasParameter('ajgl_csv.reader.default_type'));
+        $this->assertTrue($this->container->hasParameter('ajgl_csv.writer.default_type'));
         $this->assertTrue($this->container->hasDefinition('ajgl_csv'));
 
         $this->assertSame('Ajgl\Csv\Csv', $this->container->getParameter('ajgl_csv.class'));
+        $this->assertSame('php', $this->container->getParameter('ajgl_csv.reader.default_type'));
+        $this->assertSame('php', $this->container->getParameter('ajgl_csv.writer.default_type'));
 
         $definition = $this->container->getDefinition('ajgl_csv');
         $this->assertSame(
@@ -52,5 +56,20 @@ class AjglCsvExtensionTest extends \PHPUnit_Framework_TestCase
             $definition->getFactoryClass()
         );
         $this->assertSame('create', $definition->getFactoryMethod());
+
+        $calls = $definition->getMethodCalls();
+        $this->assertCount(2, $calls);
+        foreach ($calls as $call) {
+            switch ($call[0]) {
+                case 'setDefaultReaderType':
+                    $this->assertSame(array('%ajgl_csv.reader.default_type%'), $call[1]);
+                    break;
+                case 'setDefaultWriterType':
+                    $this->assertSame(array('%ajgl_csv.writer.default_type%'), $call[1]);
+                    break;
+                default:
+                    $this->fail("Unexpected method call '{$call[0]}'");
+            }
+        }
     }
 }
