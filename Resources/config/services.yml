@@ -1,8 +1,0 @@
-parameters:
-    ajgl_csv.service.class: Ajgl\Csv\Csv
-
-services:
-    ajgl_csv:
-        class: %ajgl_csv.service.class%
-        factory_class: %ajgl_csv.service.class%
-        factory_method: create
