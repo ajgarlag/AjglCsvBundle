@@ -1,5 +1,5 @@
 AjglCsvBundle
-=====================
+=============
 
 This bundles integrates the AjglCsv library into Symfony.
 
@@ -24,6 +24,22 @@ License
 This bundle is under the MIT license. The complete license is stored in the `Resources/meta/LICENSE` file in this bundle:
 
 [Read the License](Resources/meta/LICENSE)
+
+
+Badges
+------
+
+* **Travis CI**: [![Build Status](https://travis-ci.org/ajgarlag/AjglCsvBundle.png?branch=master)](https://travis-ci.org/ajgarlag/AjglCsvBundle)
+* **Poser Latest Stable Version:** [![Latest Stable Version](https://poser.pugx.org/ajgl/csv-bundle/v/stable.png)](https://packagist.org/packages/ajgl-bundle/csv)
+* **Poser Latest Unstable Version** [![Latest Unstable Version](https://poser.pugx.org/ajgl/csv-bundle/v/unstable.png)](https://packagist.org/packages/ajgl-bundle/csv)
+* **Poser Total Downloads** [![Total Downloads](https://poser.pugx.org/ajgl/csv-bundle/downloads.png)](https://packagist.org/packages/ajgl-bundle/csv)
+* **Poser Monthly Downloads** [![Montly Downloads](https://poser.pugx.org/ajgl/csv-bundle/d/monthly.png)](https://packagist.org/packages/ajgl-bundle/csv)
+* **Poser Daily Downloads** [![Daily Downloads](https://poser.pugx.org/ajgl/csv-bundle/d/daily.png)](https://packagist.org/packages/ajgl-bundle/csv)
+* **Scrutinizer Quality** [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/quality-score.png?s=962ceee9672178535b066c1faa5cc6d688941981)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/)
+* **Scrutinizer Code Coverage** [![Code Coverage](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/coverage.png?s=fe77261c139ad2ce3ee79aacfe321f11ec8c9a66)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/)
+* **Bitdeli Popularity** [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ajgarlag/ajglcsvbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+* **SensionLabs Insight Quality** [![SensioLabsInsight](https://insight.sensiolabs.com/projects/89898395-b388-427c-a962-82c28afdef37/mini.png)](https://insight.sensiolabs.com/projects/89898395-b388-427c-a962-82c28afdef37)
+* **VersionEye Dependency Status** [![Dependency Status](https://www.versioneye.com/php/ajgl:csv-bundle/dev-master/badge.png)](https://www.versioneye.com/php/ajgl:csv-bundle/dev-master)
 
 
 About
