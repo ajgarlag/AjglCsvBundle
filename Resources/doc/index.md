@@ -45,9 +45,9 @@ public function registerBundles()
 }
 ```
 
-###Add new constraints to your classes
+###Use the CSV service
 
-You can now the CSV service. For example:
+You can now use the CSV service. For example:
 
 ```php
 <?php
@@ -71,8 +71,6 @@ class DefaultController extends Controller
 
 ```
 
-By default, the new constraints namespace is aliased as `AjglEs`. You can
-modify in the bundle configuration
 
 Configuration
 -------------
