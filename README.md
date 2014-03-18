@@ -1,7 +1,7 @@
 AjglCsvBundle
 =============
 
-This bundles integrates the AjglCsv library into Symfony.
+This bundles integrates the [AjglCsv](https://github.com/ajgarlag/AjglCsv) library into Symfony.
 
 
 Documentation
