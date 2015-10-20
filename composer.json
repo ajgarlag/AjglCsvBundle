@@ -25,11 +25,9 @@
         "psr-0": {"Ajgl\\Bundle\\CsvBundle": ""}
     },
     "target-dir": "Ajgl/Bundle/CsvBundle",
-    "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.3.x-dev",
-            "dev-develop": "0.4.x-dev"
+            "dev-master": "0.4.x-dev"
         }
     }
 }
