@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Leave gitflow workflow
+- Migration to PSR-4
 
 ## [0.3.0] - 2014-08-23
 

@@ -22,9 +22,11 @@
         "phpunit/phpunit": "~4.0"
     },
     "autoload": {
-        "psr-0": {"Ajgl\\Bundle\\CsvBundle": ""}
+        "psr-4": {"Ajgl\\Bundle\\CsvBundle\\": "src/"}
     },
-    "target-dir": "Ajgl/Bundle/CsvBundle",
+    "autoload-dev": {
+        "psr-4": {"Ajgl\\Bundle\\CsvBundle\\Tests\\": "tests/"}
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "0.4.x-dev"
