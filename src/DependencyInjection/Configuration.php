@@ -1,12 +1,14 @@
 <?php
-/**
- * This file is part of the AJ General Libraries Bundles
+
+/*
+ * AJGL CSV Bundle
  *
- * Copyright (C) 2010-2014 Antonio J. García Lagar <aj@garcialagar.es>
+ * Copyright (C) Antonio J. García Lagar <aj@garcialagar.es>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Ajgl\Bundle\CsvBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -22,7 +24,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('ajgl_csv');
 
-         $rootNode
+        $rootNode
             ->children()
                 ->enumNode('reader_default_type')
                     ->values(array('php', 'rfc'))
