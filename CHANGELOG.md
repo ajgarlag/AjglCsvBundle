@@ -5,10 +5,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 ### Added
 - Add CHANGELOG.md file
+- Add PHP 5.6 support
+- Add PHP 7.0 support
 
 ### Changed
 - Leave gitflow workflow
 - Migration to PSR-4
+
+### Removed
+- Remove PHP 5.3 support
 
 ## [0.3.0] - 2014-08-23
 
