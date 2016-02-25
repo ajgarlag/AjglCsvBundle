@@ -1,34 +1,18 @@
-AjglCsvBundle
-=====================
-
-This bundle integrates the AjglCsv library into Symfony.
+AjglCsvBundle Documentation
+===========================
 
 
-Instalation
------------
+Installation
+------------
 
-###Download AjglCsvBundle
+###Download the bundle
 
-Add AjglCsvBundle in your composer.json:
-
-```js
-{
-    "require": {
-        "ajgl/csv-bundle": "*"
-    }
-}
+To install the latest stable version, open a console and execute the following command:
+```
+$ composer require ajgl/csv-bundle
 ```
 
-Now tell composer to download the bundle by running the command:
-
-``` bash
-$ php composer.phar update ajgl/csv-bundle
-```
-
-Composer will install the bundle to your project's `vendor/ajgl` directory.
-
-
-###Enable the Bundle
+###Enable the bundle
 
 Enable the bundle in the kernel:
 
@@ -45,9 +29,25 @@ public function registerBundles()
 }
 ```
 
-###Use the CSV service
 
-You can now use the CSV service. For example:
+Configuration
+-------------
+
+To configure the bundle, add the following configuration to your `config.yml`
+file.
+
+``` yaml
+# app/config/config.yml
+ajgl_csv:
+    reader_default_type: "rfc" #"php" by default. The default reader type.
+    writer_default_type: "rfc" #"php" by default. The default writer type.
+```
+
+
+Usage
+-----
+
+You can now use the CSV service getting it from the container with the key `ajgl_csv`.
 
 ```php
 <?php
@@ -69,18 +69,4 @@ class DefaultController extends Controller
 
 }
 
-```
-
-
-Configuration
--------------
-
-To configure the bundle, add the following configuration to your `config.yml`
-file.
-
-``` yaml
-# app/config/config.yml
-ajgl_csv:
-    reader_default_type: "rfc" #"php" by default. The default reader type.
-    writer_default_type: "rfc" #"php" by default. The default writer type.
 ```
