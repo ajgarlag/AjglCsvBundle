@@ -4,22 +4,15 @@ matrix:
   fast_finish: true
   include:
     - php: 5.4
-      env: SYMFONY_VERSION=2.3.*
+      env: COMPOSER_FLAGS="--prefer-lowest"
     - php: 5.4
-      env: SYMFONY_VERSION=2.7.*
-    - php: 5.4
-      env: SYMFONY_VERSION=2.8.*
     - php: 5.5
-      env: SYMFONY_VERSION=3.0.*
     - php: 5.6
-      env: SYMFONY_VERSION=3.0.*
     - php: 7
-      env: SYMFONY_VERSION=3.0.*
     - php: hhvm
-      env: SYMFONY_VERSION=3.0.*
 
 before_script:
-  - composer require symfony/framework-bundle:${SYMFONY_VERSION}
+  - composer update --prefer-dist --no-interaction $COMPOSER_FLAGS
 script: phpunit --coverage-clover=coverage.clover
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
