@@ -13,6 +13,7 @@ This bundles integrates the [AjglCsv](https://github.com/ajgarlag/AjglCsv) libra
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/89898395-b388-427c-a962-82c28afdef37/mini.png)](https://insight.sensiolabs.com/projects/89898395-b388-427c-a962-82c28afdef37)
+[![StyleCI](https://styleci.io/repos/6685270/shield)](https://styleci.io/repos/6685270)
 
 
 Documentation
