@@ -10,8 +10,8 @@ This bundles integrates the [AjglCsv](https://github.com/ajgarlag/AjglCsv) libra
 [![Montly Downloads](https://poser.pugx.org/ajgl/csv-bundle/d/monthly.png)](https://packagist.org/packages/ajgl/csv-bundle)
 [![Daily Downloads](https://poser.pugx.org/ajgl/csv-bundle/license.png)](https://packagist.org/packages/ajgl/csv-bundle)
 [![License](https://poser.pugx.org/ajgl/csv-bundle/d/daily.png)](https://packagist.org/packages/ajgl/csv-bundle)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/quality-score.png?s=962ceee9672178535b066c1faa5cc6d688941981)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/)
-[![Code Coverage](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/coverage.png?s=fe77261c139ad2ce3ee79aacfe321f11ec8c9a66)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ajgarlag/AjglCsvBundle/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/89898395-b388-427c-a962-82c28afdef37/mini.png)](https://insight.sensiolabs.com/projects/89898395-b388-427c-a962-82c28afdef37)
 
 
