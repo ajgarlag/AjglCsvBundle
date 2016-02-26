@@ -37,25 +37,18 @@ class AjglCsvExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $this->extension->load(array(), $this->container);
 
-        $this->assertTrue($this->container->hasParameter('ajgl_csv.class'));
         $this->assertTrue($this->container->hasParameter('ajgl_csv.reader.default_type'));
         $this->assertTrue($this->container->hasParameter('ajgl_csv.writer.default_type'));
         $this->assertTrue($this->container->hasDefinition('ajgl_csv'));
 
-        $this->assertSame('Ajgl\Csv\Csv', $this->container->getParameter('ajgl_csv.class'));
         $this->assertSame('php', $this->container->getParameter('ajgl_csv.reader.default_type'));
         $this->assertSame('php', $this->container->getParameter('ajgl_csv.writer.default_type'));
 
         $definition = $this->container->getDefinition('ajgl_csv');
         $this->assertSame(
-            '%ajgl_csv.class%',
+            'Ajgl\Csv\Csv',
             $definition->getClass()
         );
-        $this->assertSame(
-            '%ajgl_csv.class%',
-            $definition->getFactoryClass()
-        );
-        $this->assertSame('create', $definition->getFactoryMethod());
 
         $calls = $definition->getMethodCalls();
         $this->assertCount(2, $calls);

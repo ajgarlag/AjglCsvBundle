@@ -28,7 +28,11 @@ class AjglCsvExtension extends Extension
         $container->setParameter('ajgl_csv.writer.default_type', $config['writer_default_type']);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('csv.xml');
+        if (method_exists('Symfony\Component\DependencyInjection\Definition', 'getFactoryClass')) {
+            $loader->load('csv.legacy.xml');
+        } else {
+            $loader->load('csv.xml');
+        }
 
         $csvDefinition = $container->getDefinition('ajgl_csv');
         $csvDefinition->addMethodCall('setDefaultReaderType', array('%ajgl_csv.reader.default_type%'));
