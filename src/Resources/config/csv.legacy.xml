@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="ajgl_csv" class="Ajgl\Csv\Csv" factory-class="Ajgl\Csv\Csv" factory-method="crate"/>
+        <service id="ajgl_csv" class="Ajgl\Csv\Csv" factory-class="Ajgl\Csv\Csv" factory-method="create"/>
     </services>
 
 </container>
