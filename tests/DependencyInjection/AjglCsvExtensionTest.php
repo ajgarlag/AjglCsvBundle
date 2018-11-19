@@ -12,12 +12,13 @@
 namespace Ajgl\Bundle\CsvBundle\Tests\DependencyInjection;
 
 use Ajgl\Bundle\CsvBundle\DependencyInjection\AjglCsvExtension;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class AjglCsvExtensionTest extends \PHPUnit_Framework_TestCase
+class AjglCsvExtensionTest extends TestCase
 {
     /**
      * @var ContainerBuilder

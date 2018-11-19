@@ -12,11 +12,12 @@
 namespace Ajgl\Bundle\Csv\Tests\DependencyInjection;
 
 use Ajgl\Bundle\CsvBundle\DependencyInjection\Configuration;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class ConfigurationTest extends \PHPUnit_Framework_TestCase
+class ConfigurationTest extends TestCase
 {
     /**
      * @var Configuration

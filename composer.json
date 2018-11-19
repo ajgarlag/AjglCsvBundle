@@ -16,16 +16,22 @@
     "require": {
         "php": ">=5.4",
         "ajgl/csv": "^0.4",
-        "symfony/framework-bundle": "^2.7|^3.4"
+        "symfony/framework-bundle": "^2.7|^3.4|^4.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.0"
+        "symfony/phpunit-bridge": "^3.4|^4.1"
     },
     "autoload": {
         "psr-4": {"Ajgl\\Bundle\\CsvBundle\\": "src/"}
     },
     "autoload-dev": {
         "psr-4": {"Ajgl\\Bundle\\CsvBundle\\Tests\\": "tests/"}
+    },
+    "scripts": {
+        "phpunit": "vendor/bin/simple-phpunit --colors=always",
+        "test": [
+            "@phpunit"
+        ]
     },
     "extra": {
         "branch-alias": {
