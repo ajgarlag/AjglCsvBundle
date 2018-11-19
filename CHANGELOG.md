@@ -4,6 +4,22 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Added
+- PHP 7.1 support
+- PHP 7.2 support
+- PHP 7.3 support
+- Symfony 4.x support
+
+### Fixed
+- Symfony 3.x support
+
+### Removed
+- Symfony 2.3 support
+
+## [0.4.1] - 2016-05-23
+### Fixed
+- Typo in legacy configuration
+
 ## [0.4.0] - 2016-02-26
 ### Added
 - Add CHANGELOG.md file
@@ -26,7 +42,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.0.2 - 2012-11-18
 
-[unreleased]: https://github.com/ajgarlag/AjglCsvBundle/compare/0.4.0...master
+[unreleased]: https://github.com/ajgarlag/AjglCsvBundle/compare/0.4.1...master
+[0.4.1]: https://github.com/ajgarlag/AjglCsvBundle/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/ajgarlag/AjglCsvBundle/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/ajgarlag/AjglCsvBundle/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/ajgarlag/AjglCsvBundle/compare/0.1.0...0.2.0
